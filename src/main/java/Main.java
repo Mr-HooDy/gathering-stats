@@ -53,7 +53,7 @@ public class Main {
             WebElement rowCityElement;
             WebElement rowPageLinkElement;
 
-            for (int i = 50; i >= 1; i--) {
+            for (int i = 51; i >= 1; i--) {
                 /*if (i == 191 ||  i == 96 || i == 70 ) {
                     System.out.println("---");
                 }*/
