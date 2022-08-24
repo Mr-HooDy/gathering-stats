@@ -12,7 +12,7 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String email = "vladzazorin@yandex.ru";
-        String pass = "MyPochta777";
+        String pass = "";
         ArrayList<String> saratovList = new ArrayList<>();
         ArrayList<String> otherList = new ArrayList<>();
 
@@ -75,6 +75,8 @@ public class Main {
                     case ("packtime64.ru/pnd-pvd-difference/"): rowPageLinkFull = "пвд и пнд разница";
                             break;
                     case ("packtime64.ru/plenki-soldering-pet-pp/"): rowPageLinkFull = "пленки для запайки";
+                            break;
+                    case ("packtime64.ru/obertochnaya-bumaga/"): rowPageLinkFull = "обёрточная бумага";
                             break;
                     case ("packtime64.ru/vetosh-cp/"): rowPageLinkFull = "ветошь";
                             break;
