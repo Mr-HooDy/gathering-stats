@@ -17,7 +17,7 @@ public class Main {
         ArrayList<String> otherList = new ArrayList<>();
 
 
-        WebDriverWait wait = new WebDriverWait(driver, 5);
+        WebDriverWait wait = new WebDriverWait(driver, 45);
         
         try {
             driver.get("https://metrika.yandex.ru/stat/visor?period=week&filter=(EXISTS+ym%3Au%3AuserID+WITH+(ym%3Au%3AfirstTrafficSource%3D%3D%2527organic%2527))+and+(ym%3As%3AuserVisits%3D%3D1)&id=49867378");
@@ -53,7 +53,7 @@ public class Main {
             WebElement rowCityElement;
             WebElement rowPageLinkElement;
 
-            for (int i = 51; i >= 1; i--) {
+            for (int i = 56; i >= 35; i--) {
                 /*if (i == 191 ||  i == 96 || i == 70 ) {
                     System.out.println("---");
                 }*/
