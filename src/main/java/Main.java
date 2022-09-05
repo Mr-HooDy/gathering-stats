@@ -20,7 +20,6 @@ public class Main {
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String email = "vladzazorin@yandex.ru";
-        String pass = "";
         ArrayList<String> saratovList = new ArrayList<>();
         ArrayList<String> otherList = new ArrayList<>();
 
