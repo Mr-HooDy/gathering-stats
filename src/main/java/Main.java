@@ -1,14 +1,22 @@
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        
+        System.out.print("Input password: ");
+        String pass = in.nextLine();
+
+        System.out.print("Input date from: ");
+        int startDate = in.nextInt();
+        System.out.print("Input date to: ");
+        int endDate = in.nextInt();
+        
         System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\chromedriver\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         String email = "vladzazorin@yandex.ru";
@@ -53,7 +61,7 @@ public class Main {
             WebElement rowCityElement;
             WebElement rowPageLinkElement;
 
-            for (int i = 56; i >= 35; i--) {
+            for (int i = startDate; i >= endDate; i--) {
                 /*if (i == 191 ||  i == 96 || i == 70 ) {
                     System.out.println("---");
                 }*/
